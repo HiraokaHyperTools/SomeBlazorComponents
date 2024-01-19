@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PackageId>HiraokaHyperTools.SomeBlazorComponents</PackageId>
+    <Version>0.1.0</Version>
+    <RootNamespace>HiraokaHyperTools.SomeBlazorComponents</RootNamespace>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Authors>kenjiuno</Authors>
+    <Copyright>Copyright (c) 2024 HIRAOKA HYPERS TOOLS, Inc.</Copyright>
+    <PackageProjectUrl>https://github.com/HiraokaHyperTools/SomeBlazorComponents</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/HiraokaHyperTools/SomeBlazorComponents.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>LGPL-2.0-or-later</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="/" />
+
+    <SupportedPlatform Include="browser" />
+
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.26" />
+
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+</Project>
